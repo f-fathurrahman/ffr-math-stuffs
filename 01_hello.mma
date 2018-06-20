@@ -1,0 +1,28 @@
+(* This is a comment *)
+
+(*
+This file is intended to be run as:
+
+  math -run "<<inputfile.mma"
+*)
+
+Print[""]
+
+name = "efefer";
+Print["Hello my name is ", name];
+
+(* Constant *)
+theta = 2*Pi
+Print["theta = ", theta]
+Print["Numerical value of Pi = ", N[Pi]]
+Print["Sin[theta] is = ", Sin[theta]]
+
+w = 2*x/a + 3*x/a
+Print["w = ", w]
+
+(* Exporting graphics to file *)
+Print["Create plot"]
+Export["TEMP_01_hello.pdf", Plot[Sin[x]*Cos[2*x],{x,-Pi,Pi}], "PDF"]
+Print["Done"]
+
+Exit[]
