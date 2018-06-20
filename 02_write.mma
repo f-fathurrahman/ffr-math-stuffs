@@ -1,0 +1,10 @@
+(* Write to stdout, WITHOUT newline at the end *)
+WriteString["stdout", "Hello this is ffr"]
+
+(* Write to stdout, WITH newline at the end *)
+WriteString["stdout", "Hello this is ffr\n"]
+
+WriteString["TEMP_02_write.txt", "This string will be written to file\n"]
+
+Exit[]
+
