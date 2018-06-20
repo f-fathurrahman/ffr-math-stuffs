@@ -1,0 +1,7 @@
+g = Plot[Sin[x],{x,-Pi,Pi}]
+Export["TEMP_sin.pdf",g,"PDF"]
+
+g = Plot[Exp[-0.5*x^2],{x,-5,5}]
+Export["TEMP_exp_x2.pdf",g,"PDF"]
+
+Exit[]
