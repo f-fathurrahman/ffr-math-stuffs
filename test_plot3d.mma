@@ -1,0 +1,8 @@
+g = Plot3D[ 1/Sqrt[(x+1)^2 + y^2] - 1/Sqrt[(x-1)^2 + y^2],
+            {x,-15,15}, {y,-15,15},
+            Ticks -> {Automatic,Automatic,{-1.0,-0.04,0,0.04,1.0}},
+            AxesLabel -> {"x(b)", "y(b)", "V(kQ/b)"} ]
+
+Export["TEMP_Coulomb2d.pdf", g, "PDF"]
+
+Exit[]
